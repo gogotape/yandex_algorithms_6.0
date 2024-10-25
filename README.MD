@@ -1,0 +1,1 @@
+Yandex algorithms 6.0
