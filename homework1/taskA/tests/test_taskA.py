@@ -1,7 +1,7 @@
-from homework1.task1.task1 import determine_closest_raft_side_or_edge
+from homework1.taskA.taskA import determine_closest_raft_side_or_edge
 
 
-def test_task1():
+def test_taskA():
     x1, y1 = -1, -2
     x2, y2 = 5, 3
     x, y = -4, 6

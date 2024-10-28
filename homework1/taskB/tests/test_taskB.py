@@ -1,7 +1,7 @@
-from homework1.task2.task2 import find_min_numbers_of_socks_and_t_shorts
+from homework1.taskB.taskB import find_min_numbers_of_socks_and_t_shorts
 
 
-def test_task2():
+def test_taskB():
     a, b, c, d = 6, 2, 7, 3
     assert find_min_numbers_of_socks_and_t_shorts(a, b, c, d) == (3, 4)
 
