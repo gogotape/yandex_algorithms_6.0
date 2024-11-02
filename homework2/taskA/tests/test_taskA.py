@@ -2,7 +2,7 @@ from homework2.taskA.taskA import calc_prefix_sum
 
 
 def test_calc_prefix_sum():
-    arr1 = [10,-4, 5, 0, 2]
+    arr1 = [10, -4, 5, 0, 2]
     assert calc_prefix_sum(arr1) == [10, 6, 11, 11, 13]
 
     arr2 = []
