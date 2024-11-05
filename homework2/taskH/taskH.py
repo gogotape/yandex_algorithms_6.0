@@ -25,6 +25,23 @@ def calc_min_numbers_of_transitions(cabinets: list[int]) -> int:
     return res
 
 
+def calc_min_numbers_of_transitions_v2(cabinets: list[int]) -> int:
+
+    pref_sum = calc_prefix_sum(cabinets)
+    suf_sum = calc_suffix_sum(cabinets)
+
+    res = 0
+    for i in range(1, len(cabinets)):
+        res += cabinets[i] * i
+
+    now_sum = res
+    for pos in range(1, len(cabinets)):
+        now_sum += pref_sum[pos] - suf_sum[pos]
+        res = min(res, now_sum)
+
+    return res
+
+
 def dummy(cabinets: list[int]) -> int:
     res = float("inf")
     for i in range(len(cabinets)):
